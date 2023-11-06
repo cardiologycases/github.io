@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Delete Account</h2>
+
+<form
+  action="https://formspree.io/f/moqobkvd"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Please Write Delete:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
+
+<p id="message"></p>
+
+<script>
+document.getElementById("myForm").addEventListener("submit", function(event){
+  event.preventDefault()
+  document.getElementById("message").innerHTML = "Gönderildi!";
+});
+</script>
+
+</body>
+</html>
